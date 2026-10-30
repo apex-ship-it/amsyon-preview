@@ -192,6 +192,44 @@ footer a{color:var(--gold);text-decoration:none}
 .fab{position:fixed;right:18px;bottom:18px;z-index:30;width:60px;height:60px;border-radius:50%;background:#1FAF55;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.3)}
 .fab svg{width:32px;height:32px}
 </style>
+
+<style id="amsyon-preview-lock-style">
+html.amsyon-locked body>*:not(#amsyon-gate){visibility:hidden!important}
+#amsyon-gate{position:fixed;inset:0;z-index:2147483647;background:#102b2b;color:#f9fcfa;display:grid;place-items:center;padding:20px;font-family:system-ui,-apple-system,sans-serif}
+#amsyon-gate .amsyon-box{width:min(100%,410px);padding:39px 34px;border:1px solid #54776b70;background:#1c3e3c;border-radius:20px;box-shadow:0 25px 90px #0005}
+#amsyon-gate h2{font-size:27px;letter-spacing:-.7px;margin:0 0 12px;color:white}
+#amsyon-gate p{line-height:1.65;color:#c5d8d0;font-size:13px}
+#amsyon-gate label{display:block;font-weight:700;margin:24px 0 9px;font-size:13px}
+#amsyon-gate input{width:100%;padding:14px;background:white;color:#142c2c;border:2px solid transparent;border-radius:8px;box-sizing:border-box}
+#amsyon-gate button{width:100%;margin-top:14px;padding:14px;background:#b5dbc9;border:0;border-radius:8px;color:#173731;font-weight:800;cursor:pointer}
+#amsyon-gate .amsyon-error{min-height:22px;color:#ffd1c7!important}
+#amsyon-gate small{font-size:11px;color:#afc7bc}
+</style>
+<script id="amsyon-preview-lock-script">
+(function(){
+  "use strict";
+  var key="amsyon-preview-visitor-unlocked-v1";
+  var expected="dd593482029005cdec14f5dfd1e2005c4bdfc3d67537582da0ee107374c73dbe";
+  try { if(sessionStorage.getItem(key)==="yes") return; }catch(e){}
+  document.documentElement.classList.add("amsyon-locked");
+  function addGate(){
+    var gate=document.createElement("div");gate.id="amsyon-gate";
+    gate.innerHTML='<div class="amsyon-box"><div style="font-size:13px;font-weight:800;letter-spacing:.2em;color:#b5dbc9;margin-bottom:16px">AMSYON TECHNOLOGIES</div><h2>Private client preview</h2><p>This demonstration is intended for clients who have received an access password from AMSYON.</p><form id="amsyon-unlock-form"><label for="amsyon-password">Access password</label><input type="password" id="amsyon-password" autocomplete="off" required placeholder="Enter preview password"><button type="submit">Open preview →</button><p class="amsyon-error" role="alert" id="amsyon-unlock-error"></p></form><small>Prototype password screen only. This is not a secure access-control mechanism.</small></div>';
+    document.body.appendChild(gate);
+    document.getElementById("amsyon-unlock-form").addEventListener("submit",async function(ev){
+      ev.preventDefault();
+      var pwd=document.getElementById("amsyon-password").value;
+      var data=new TextEncoder().encode(pwd);
+      var hash=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",data))).map(x=>x.toString(16).padStart(2,"0")).join("");
+      if(hash===expected){
+        try{sessionStorage.setItem(key,"yes")}catch(e){}
+        document.documentElement.classList.remove("amsyon-locked");gate.remove();
+      }else{document.getElementById("amsyon-unlock-error").textContent="Incorrect password. Please try again.";document.getElementById("amsyon-password").value=""}
+    });
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",addGate,{once:true});else addGate();
+})();
+</script>
 </head>
 <body>
 
