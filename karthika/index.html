@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Karthika's Bridal Studio Sample</title>
+<meta name="description" content="Sample website for Karthika's Salon & Bridal Studio, Magunta Layout, Nellore. Prepared by AMSYON Technologies.">
+<meta property="og:title" content="Karthika's Salon &amp; Bridal Studio, Nellore">
+<meta property="og:description" content="Bridal makeup, pelli jada, saree draping and bridal jewellery in Magunta Layout, Nellore. Book your date on WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&family=Hind+Guntur:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#3B0D2C;
+  --plum-2:#5C1846;
+  --rose:#C2185B;
+  --rose-soft:#F8E1EA;
+  --gold:#C9A14A;
+  --ivory:#FFF8F2;
+  --ink:#2B1623;
+  --muted:#76586A;
+  --line:#EBD9DF;
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --body:"Jost", "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --telugu:"Hind Guntur", "Noto Sans Telugu", sans-serif;
+  /* layout: deep plum hero with an arch portrait frame, ivory sections below, left-aligned editorial rhythm, phone-first */
+  color-scheme: light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+img,canvas{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+h1,h2,h3,.step .n,.price{font-family:var(--display);font-weight:600;line-height:1.08;text-wrap:balance;letter-spacing:.2px;font-variant-numeric:lining-nums}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.eyebrow{font-size:13px;letter-spacing:2.2px;text-transform:uppercase;font-weight:500;color:var(--gold)}
+
+/* sample notice */
+.demo{background:#1E0716;color:#F3DCE6;font-size:13px;line-height:1.45;padding:9px 0;text-align:left}
+.demo .wrap{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.demo b{color:#fff;font-weight:600}
+.demo a{color:var(--gold);text-decoration:none;font-weight:500;white-space:nowrap}
+
+/* header */
+header{background:var(--plum);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(201,161,74,.25)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none}
+.brand .k{font-family:var(--display);font-style:italic;font-weight:600;font-size:30px;color:#fff}
+.brand .k span{color:#F48FB1}
+.brand .s{font-size:10.5px;letter-spacing:2.6px;text-transform:uppercase;color:var(--gold);margin-top:4px}
+nav{display:flex;gap:22px;align-items:center}
+nav a.nl{text-decoration:none;font-size:15px;color:#F3DCE6}
+nav a.nl:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:13px 22px;font-weight:500;font-size:16px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:var(--body);transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-wa{background:#1FAF55;color:#fff}
+.btn-wa:hover{background:#18984A}
+.btn-gold{background:var(--gold);color:var(--plum)}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.btn-line{border-color:var(--rose);color:var(--rose);background:transparent}
+.btn-line:hover{background:var(--rose-soft)}
+.btn svg{width:20px;height:20px;flex:none}
+.hdr-wa{padding:10px 16px;font-size:14px}
+@media (max-width:760px){nav a.nl{display:none}}
+
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 10%, #6E1D52 0%, transparent 60%), var(--plum);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:56px 0 64px}
+.hero h1{font-size:clamp(42px,6vw,72px);font-weight:600}
+.hero h1 em{font-style:italic;color:#F7B7CF;font-weight:500}
+.te{font-family:var(--telugu);font-weight:600;font-size:19px;color:var(--gold);margin-top:14px;line-height:1.5}
+.hero p.lede{margin-top:18px;max-width:52ch;color:#F2DCE6;font-size:18px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding-top:22px;border-top:1px solid rgba(201,161,74,.3);font-size:14.5px;color:#EBCFDC}
+.facts span{display:flex;align-items:center;gap:8px}
+.facts i{width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 28px 28px;overflow:hidden;border:2px solid rgba(201,161,74,.6);box-shadow:0 0 0 10px rgba(201,161,74,.08),0 40px 80px rgba(0,0,0,.35)}
+.arch canvas{position:absolute;inset:0;width:100%;height:100%}
+.arch .cap{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(transparent,rgba(30,7,22,.85));font-size:14px;color:#F5DFE9}
+.arch .cap b{display:block;font-family:var(--display);font-size:24px;font-weight:600;font-style:italic;color:#fff}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px;padding:40px 0 48px}
+  .arch{max-width:340px;width:100%;justify-self:center}
+}
+
+/* offer band */
+.offer{background:linear-gradient(90deg,#B0124F,#D63F7A);color:#fff}
+.offer .wrap{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:20px 0}
+.offer .tag{font-size:12px;letter-spacing:2px;text-transform:uppercase;background:rgba(255,255,255,.18);padding:5px 12px;border-radius:999px;font-weight:600}
+.offer h3{font-size:clamp(24px,3vw,30px);font-weight:700}
+.offer p{font-size:15px;color:#FFE4EE;margin-top:2px}
+.offer .txt{display:flex;flex-direction:column;gap:6px;max-width:720px}
+
+/* sections */
+section{padding:72px 0}
+.sec-head{display:grid;gap:10px;max-width:640px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(34px,4.5vw,48px);color:var(--plum)}
+.sec-head p{color:var(--muted)}
+
+/* services */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.grid-3{grid-template-columns:1fr}}
+.svc{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:10px;align-content:start}
+.svc .ic{width:48px;height:48px;border-radius:14px;background:var(--rose-soft);display:flex;align-items:center;justify-content:center}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:26px;color:var(--plum)}
+.svc p{color:var(--muted);font-size:15.5px}
+
+/* packages */
+.pk-sec{background:#fff;border-block:1px solid var(--line)}
+.pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.pkgs{grid-template-columns:1fr}}
+.pkg{border:1px solid var(--line);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:16px;background:var(--ivory)}
+.pkg.hl{background:var(--plum);color:#fff;border-color:var(--plum)}
+.pkg h3{font-size:30px;color:var(--plum)}
+.pkg.hl h3{color:#fff}
+.pkg .for{font-size:14px;color:var(--muted)}
+.pkg.hl .for{color:#EBCFDC}
+.pkg ul{list-style:none;display:grid;gap:9px;font-size:15.5px}
+.pkg li{display:flex;gap:10px;align-items:flex-start}
+.pkg li svg{width:18px;height:18px;flex:none;margin-top:4px}
+.pkg .price{font-family:var(--display);font-size:22px;font-style:italic;color:var(--rose);margin-top:auto}
+.pkg.hl .price{color:#F7B7CF}
+.pkg .btn{align-self:flex-start}
+.pkg.hl .btn-line{border-color:var(--gold);color:var(--gold)}
+.pkg.hl .btn-line:hover{background:rgba(201,161,74,.12)}
+.note{margin-top:18px;font-size:14px;color:var(--muted)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:900px){.gal{grid-template-columns:repeat(2,1fr)}}
+.tile{position:relative;aspect-ratio:3/4;border-radius:18px;overflow:hidden;background:var(--plum)}
+.tile canvas{position:absolute;inset:0;width:100%;height:100%}
+.tile .lbl{position:absolute;left:12px;right:12px;bottom:12px;color:#fff;font-family:var(--display);font-style:italic;font-weight:600;font-size:22px;line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.tile .lbl small{display:block;font-family:var(--body);font-style:normal;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#F3D99B;margin-top:4px;font-weight:500}
+.gal-foot{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:22px}
+.gal-foot p{color:var(--muted);font-size:15px;max-width:60ch}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+@media (max-width:760px){.steps{grid-template-columns:1fr}}
+.step{border-top:2px solid var(--gold);padding-top:18px;display:grid;gap:6px}
+.step .n{font-family:var(--display);font-size:44px;line-height:1;color:var(--rose);font-weight:600}
+.step h3{font-size:26px;color:var(--plum)}
+.step p{color:var(--muted);font-size:15.5px}
+
+/* booking */
+.book{background:var(--plum);color:#fff}
+.book .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+@media (max-width:860px){.book .wrap{grid-template-columns:1fr}}
+.book h2{font-size:clamp(34px,4.5vw,48px)}
+.book .side p{color:#EBCFDC;margin-top:12px;max-width:44ch}
+.contact{display:grid;gap:14px;margin-top:26px}
+.contact div{display:flex;gap:14px;align-items:flex-start}
+.contact svg{width:22px;height:22px;flex:none;margin-top:3px}
+.contact b{display:block;font-weight:500;color:#fff}
+.contact span{color:#EBCFDC;font-size:15.5px}
+.contact a{color:var(--gold);text-decoration:none}
+form{background:#fff;color:var(--ink);border-radius:24px;padding:26px;display:grid;gap:16px;box-shadow:0 30px 70px rgba(0,0,0,.3)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-size:14px;font-weight:500;color:var(--plum)}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--ivory);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--rose);outline:none;box-shadow:0 0 0 3px rgba(194,24,91,.15)}
+textarea{min-height:84px;resize:vertical}
+form .btn-wa{width:100%;padding:16px;font-size:17px}
+.fine{font-size:13px;color:var(--muted)}
+
+/* visit */
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:760px){.visit .wrap{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;gap:12px;align-content:start}
+.card h3{font-size:30px;color:var(--plum)}
+.card p{color:var(--muted)}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;font-size:15.5px}
+.hours dt{color:var(--muted)}
+.hours dd{font-variant-numeric:tabular-nums;color:var(--ink)}
+.card .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+
+footer{background:#1E0716;color:#CDB0BF;font-size:14px;padding:30px 0 96px}
+footer .wrap{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap}
+footer a{color:var(--gold);text-decoration:none}
+
+/* floating WhatsApp */
+.fab{position:fixed;right:18px;bottom:18px;z-index:30;width:60px;height:60px;border-radius:50%;background:#1FAF55;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+.fab svg{width:32px;height:32px}
+</style>
+</head>
+<body>
+
+<div class="demo" role="note">
+  <div class="wrap">
+    <span><b>Sample website</b> made for Karthika's Bridal Studio by AMSYON Technologies. This is a preview, not the studio's live site yet.</span>
+    <a href="https://www.amsyon.com">www.amsyon.com</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Karthika's Salon and Bridal Studio, home">
+      <span class="k">Karthika<span>'s</span></span>
+      <span class="s">Salon &amp; Bridal Studio</span>
+    </a>
+    <nav aria-label="Main">
+      <a class="nl" href="#services">Services</a>
+      <a class="nl" href="#packages">Packages</a>
+      <a class="nl" href="#gallery">Gallery</a>
+      <a class="nl" href="#book">Book</a>
+      <a class="btn btn-wa hdr-wa wa-link" data-msg="Hi Karthika's Bridal Studio, I'd like to know more about your bridal makeup." href="https://wa.me/918500131338">
+        <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.7-1.2 2.2 2.2 0 00.2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+        WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h-hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Bridal makeup artist · Magunta Layout, Nellore</p>
+        <h1 id="h-hero">Your wedding day. <em>Your most beautiful self.</em></h1>
+        <p class="te" lang="te">మీ పెళ్లి రోజు, ఎప్పటికీ గుర్తుండే అందం</p>
+        <p class="lede">HD and airbrush bridal makeup, hairstyling, pelli jada, saree draping and matching bridal jewellery. Everything your look needs, in one studio.</p>
+        <div class="ctas">
+          <a class="btn btn-wa wa-link" data-msg="Hi Karthika's Bridal Studio, I'd like to check if my wedding date is available." href="https://wa.me/918500131338">
+            <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.7-1.2 2.2 2.2 0 00.2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+            Check my date on WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="#packages">See packages</a>
+        </div>
+        <div class="facts">
+          <span><i></i>HD &amp; airbrush makeup</span>
+          <span><i></i>Pelli jada &amp; floral art</span>
+          <span><i></i>Open every day, 10 AM to 8 PM</span>
+        </div>
+      </div>
+      <div class="arch" aria-label="Space for the studio's signature bridal photo">
+        <canvas data-motif="0"></canvas>
+        <div class="cap"><b>Your signature bride</b>Your best bridal photo goes here</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="offer">
+    <div class="wrap">
+      <div class="txt">
+        <span class="tag">Wedding season offer</span>
+        <h3>Book 3 HD makeups, get pre-bridal care free</h3>
+        <p>Threading, waxing, bridal glow facial, pedicure and manicure, on us.</p>
+      </div>
+      <a class="btn btn-gold wa-link" data-msg="Hi, I'd like to know about the offer: book 3 HD makeups and get pre-bridal services free." href="https://wa.me/918500131338">Claim the offer</a>
+    </div>
+  </div>
+
+  <section id="services" aria-labelledby="h-svc">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" style="color:var(--rose)">What we do</p>
+        <h2 id="h-svc">Every part of your bridal look</h2>
+        <p>From the first trial to the last photo of the night, one team takes care of your makeup, hair, draping and jewellery.</p>
+      </div>
+      <div class="grid-3">
+        <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="6"/><path d="M9 9.5h.01M15 9.5h.01M9.5 13c1.4 1 3.6 1 5 0M7 19c1.5 1.5 8.5 1.5 10 0"/></svg></div><h3>HD Bridal Makeup</h3><p>Soft, camera-ready skin that looks natural in person and flawless in every photo.</p></article>
+        <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l6-6M10 14l3-8 5 5-8 3zM15 4l5 5"/><path d="M5 7h.01M8 4h.01M3 11h.01"/></svg></div><h3>Airbrush Makeup</h3><p>Light, long-wearing coverage that stays fresh through a long muhurtham and the reception.</p></article>
+        <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 0-5 2.5-5 6 0 3 2 4.5 2 7v5M12 3c3 0 5 2.5 5 6 0 3-2 4.5-2 7v5"/><circle cx="12" cy="14" r="1.2"/><circle cx="12" cy="18" r="1.2"/></svg></div><h3>Hairstyling &amp; Pelli Jada</h3><p>Traditional jada, elegant buns and modern styles, finished with fresh flowers.</p></article>
+        <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l-1 5 4 13H5L9 8z"/><path d="M9 8h6M7 15c3 1 7 1 10 0"/></svg></div><h3>Saree Draping</h3><p>Neat, secure draping for pattu sarees, half sarees and lehengas that holds all day.</p></article>
+        <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-2.5-7-5.5-7-10a7 7 0 0114 0c0 4.5-3 7.5-7 10z"/><path d="M12 8v6M9 11h6"/></svg></div><h3>Pre-bridal Care</h3><p>Bridal glow facial, waxing, threading, manicure and pedicure in the weeks before your day.</p></article>
+        <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c2 6 5 9 8 9s6-3 8-9"/><circle cx="12" cy="17" r="3"/><path d="M7 9.5h.01M17 9.5h.01M9.5 12h.01M14.5 12h.01"/></svg></div><h3>Bridal Jewellery</h3><p>Matching jewellery sets chosen with your saree, so your whole look comes together.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pk-sec" id="packages" aria-labelledby="h-pk">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" style="color:var(--rose)">Packages</p>
+        <h2 id="h-pk">Choose the look for each event</h2>
+        <p>Every package includes a consultation, so we plan your look around your saree, your jewellery and your skin.</p>
+      </div>
+      <div class="pkgs">
+        <article class="pkg">
+          <div><h3>Engagement &amp; Reception</h3><p class="for">For engagement, reception, haldi and half-saree functions</p></div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>HD party makeup</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Hairstyling of your choice</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Saree or lehenga draping</li>
+          </ul>
+          <p class="price">Price on request</p>
+          <a class="btn btn-line wa-link" data-msg="Hi, please share the price for the Engagement & Reception package." href="https://wa.me/918500131338">Ask the price</a>
+        </article>
+        <article class="pkg hl">
+          <div><h3>Bridal HD</h3><p class="for">For the muhurtham, our most complete bridal look</p></div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C9A14A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>HD bridal makeup</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C9A14A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Pelli jada with fresh flowers</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C9A14A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Pattu saree draping</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C9A14A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Bridal jewellery styling</li>
+          </ul>
+          <p class="price">Price on request</p>
+          <a class="btn btn-line wa-link" data-msg="Hi, please share the price for the Bridal HD package." href="https://wa.me/918500131338">Ask the price</a>
+        </article>
+        <article class="pkg">
+          <div><h3>Bridal Airbrush</h3><p class="for">For long ceremonies and hot days</p></div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Airbrush bridal makeup</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Pelli jada with fresh flowers</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Pattu saree draping</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="#C2185B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Bridal jewellery styling</li>
+          </ul>
+          <p class="price">Price on request</p>
+          <a class="btn btn-line wa-link" data-msg="Hi, please share the price for the Bridal Airbrush package." href="https://wa.me/918500131338">Ask the price</a>
+        </article>
+      </div>
+      <p class="note">Family and bridesmaids can be ready with you on the same day. Ask us for group rates.</p>
+    </div>
+  </section>
+
+  <section id="gallery" aria-labelledby="h-gal">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" style="color:var(--rose)">Gallery</p>
+        <h2 id="h-gal">Our brides, our best work</h2>
+        <p>On the live site, these frames show your favourite bridal photos from Instagram.</p>
+      </div>
+      <div class="gal">
+        <div class="tile"><canvas data-motif="1"></canvas><div class="lbl">Muhurtham look<small>Your photo</small></div></div>
+        <div class="tile"><canvas data-motif="2"></canvas><div class="lbl">Reception glam<small>Your photo</small></div></div>
+        <div class="tile"><canvas data-motif="3"></canvas><div class="lbl">Engagement<small>Your photo</small></div></div>
+        <div class="tile"><canvas data-motif="4"></canvas><div class="lbl">Pelli jada<small>Your photo</small></div></div>
+        <div class="tile"><canvas data-motif="5"></canvas><div class="lbl">Floral art<small>Your photo</small></div></div>
+        <div class="tile"><canvas data-motif="6"></canvas><div class="lbl">Saree draping<small>Your photo</small></div></div>
+        <div class="tile"><canvas data-motif="7"></canvas><div class="lbl">Bridal jewellery<small>Your photo</small></div></div>
+        <div class="tile"><canvas data-motif="8"></canvas><div class="lbl">Bridesmaids<small>Your photo</small></div></div>
+      </div>
+      <div class="gal-foot">
+        <p>See over 300 looks on Instagram, updated with every wedding season.</p>
+        <a class="btn btn-line" href="https://www.instagram.com/nellore_makeup_artist/">@nellore_makeup_artist</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pk-sec" aria-labelledby="h-steps">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" style="color:var(--rose)">How booking works</p>
+        <h2 id="h-steps">Three steps to your wedding look</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><h3>Send your date</h3><p>Message us your wedding date and events on WhatsApp. We confirm if your date is free.</p></div>
+        <div class="step"><span class="n">2</span><h3>Plan your look</h3><p>Visit the studio, bring your saree and jewellery ideas, and choose your package.</p></div>
+        <div class="step"><span class="n">3</span><h3>Your day</h3><p>Relax. We get you ready, calm and on time, for every photo you will keep forever.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book" aria-labelledby="h-book">
+    <div class="wrap">
+      <div class="side">
+        <p class="eyebrow">Book your date</p>
+        <h2 id="h-book">Wedding dates fill fast in the season</h2>
+        <p>Fill this in and tap the button. WhatsApp opens with your details ready to send to the studio.</p>
+        <div class="contact">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="#C9A14A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg><span><b>Call or WhatsApp</b><a href="tel:+918500131338">+91 85001 31338</a> · <a href="tel:+919959441555">+91 99594 41555</a></span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="#C9A14A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0114 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span><b>Studio</b>3rd floor, Ira Building, D-Mart Road, behind Sri Venkateswara Swamy Temple, Magunta Layout, Nellore 524003</span></div>
+        </div>
+      </div>
+      <form id="bookform" novalidate>
+        <div class="row2">
+          <label for="f-name">Your name<input id="f-name" name="name" autocomplete="name" placeholder="e.g. Sravya"></label>
+          <label for="f-event">Event<select id="f-event" name="event">
+            <option>Wedding (muhurtham)</option>
+            <option>Engagement</option>
+            <option>Reception</option>
+            <option>Haldi or mehendi</option>
+            <option>Half-saree function</option>
+            <option>Other function</option>
+          </select></label>
+        </div>
+        <div class="row2">
+          <label for="f-date">Event date<input id="f-date" name="date" type="date"></label>
+          <label for="f-people">People getting ready<select id="f-people" name="people">
+            <option>Only the bride</option>
+            <option>Bride + 1</option>
+            <option>Bride + 2</option>
+            <option>Bride + 3 or more</option>
+          </select></label>
+        </div>
+        <label for="f-pkg">Package<select id="f-pkg" name="pkg">
+          <option>Bridal HD</option>
+          <option>Bridal Airbrush</option>
+          <option>Engagement &amp; Reception</option>
+          <option>Not sure yet, please suggest</option>
+        </select></label>
+        <label for="f-note">Anything else? (optional)<textarea id="f-note" name="note" placeholder="Saree colour, venue, timing, questions"></textarea></label>
+        <a id="f-send" class="btn btn-wa" href="https://wa.me/918500131338">
+          <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.7-1.2 2.2 2.2 0 00.2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+          Send booking request on WhatsApp
+        </a>
+        <p class="fine">Nothing is booked until the studio confirms your date with you.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="visit" aria-labelledby="h-visit">
+    <div class="wrap">
+      <div class="card">
+        <p class="eyebrow" style="color:var(--rose)">Visit the studio</p>
+        <h3 id="h-visit">Magunta Layout, Nellore</h3>
+        <p>3rd floor, Ira Building, D-Mart Road, behind Sri Venkateswara Swamy Temple, Magunta Layout, Nellore 524003</p>
+        <dl class="hours"><dt>Every day</dt><dd>10:00 AM to 8:00 PM</dd></dl>
+        <div class="btns">
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Karthika%27s%20Bridal%20Studio%20Magunta%20Layout%20Nellore">Get directions</a>
+        </div>
+      </div>
+      <div class="card">
+        <p class="eyebrow" style="color:var(--rose)">Reviews</p>
+        <h3>What brides say about us</h3>
+        <p>Read reviews from brides and their families on Google, and see our latest looks on Instagram.</p>
+        <div class="btns">
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Karthika%27s%20Bridal%20Studio%20Magunta%20Layout%20Nellore">Read Google reviews</a>
+          <a class="btn btn-line" href="https://www.instagram.com/nellore_makeup_artist/">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Karthika's Salon &amp; Bridal Studio, Nellore</span>
+    <span>Sample website by AMSYON Technologies · <a href="https://www.amsyon.com">www.amsyon.com</a> · apex@amsyon.com</span>
+  </div>
+</footer>
+
+<a class="fab wa-link" data-msg="Hi Karthika's Bridal Studio, I'd like to know more about your bridal makeup." href="https://wa.me/918500131338" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.7-1.2 2.2 2.2 0 00.2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+(function(){
+  var WA = "918500131338";
+  function wa(msg){ return "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg); }
+  document.querySelectorAll("a.wa-link[data-msg]").forEach(function(a){ a.href = wa(a.getAttribute("data-msg")); });
+
+  // booking form builds the WhatsApp message live
+  var f = document.getElementById("bookform"), send = document.getElementById("f-send");
+  function fmtDate(v){
+    if(!v) return "not decided yet";
+    var p = v.split("-"); var m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    return p[2] + " " + m[parseInt(p[1],10)-1] + " " + p[0];
+  }
+  function update(){
+    var g = function(id){ return (document.getElementById(id).value || "").trim(); };
+    var lines = [
+      "Hi Karthika's Bridal Studio, I'd like to book.",
+      "Name: " + (g("f-name") || "(not given)"),
+      "Event: " + g("f-event"),
+      "Date: " + fmtDate(g("f-date")),
+      "People: " + g("f-people"),
+      "Package: " + g("f-pkg")
+    ];
+    if(g("f-note")) lines.push("Note: " + g("f-note"));
+    send.href = wa(lines.join("\n"));
+  }
+  f.addEventListener("input", update); f.addEventListener("change", update);
+  f.addEventListener("submit", function(e){ e.preventDefault(); });
+  update();
+
+  // decorative motifs (gold rangoli-style line art) for the photo frames
+  var palettes = [
+    ["#5C1846","#3B0D2C"],["#7A1E4E","#3B0D2C"],["#A3164F","#4A1036"],["#2F5E46","#173327"],
+    ["#6B2A5C","#2E0B24"],["#8E3B2E","#3E1410"],["#4E2A6B","#22102F"],["#B0124F","#5C1846"],["#3F4E7A","#1C2440"]
+  ];
+  function rnd(seed){ var s = seed*9301+49297; return function(){ s = (s*9301+49297)%233280; return s/233280; }; }
+  function draw(c){
+    var i = parseInt(c.getAttribute("data-motif"),10) || 0;
+    var r = c.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio||1, 2);
+    var w = Math.max(10, r.width), h = Math.max(10, r.height);
+    c.width = w*dpr; c.height = h*dpr;
+    var x = c.getContext("2d"); x.scale(dpr,dpr);
+    var p = palettes[i % palettes.length], R = rnd(i+3);
+    var g = x.createLinearGradient(0,0,w,h); g.addColorStop(0,p[0]); g.addColorStop(1,p[1]);
+    x.fillStyle = g; x.fillRect(0,0,w,h);
+    var cx = w*(0.5 + (R()-0.5)*0.2), cy = h*(i===0?0.42:0.45), base = Math.min(w,h)*(i===0?0.42:0.5);
+    x.strokeStyle = "rgba(214,178,98,0.55)"; x.lineWidth = 1.1;
+    var rings = 4 + Math.floor(R()*3);
+    for(var k=1;k<=rings;k++){
+      var rr = base*k/rings, petals = 8 + 4*k;
+      x.beginPath(); x.arc(cx,cy,rr*0.92,0,Math.PI*2); x.stroke();
+      for(var j=0;j<petals;j++){
+        var a = j/petals*Math.PI*2 + (k%2? Math.PI/petals : 0);
+        var px = cx + Math.cos(a)*rr*0.92, py = cy + Math.sin(a)*rr*0.92;
+        var len = rr/rings*0.9;
+        x.beginPath();
+        x.moveTo(px,py);
+        x.quadraticCurveTo(px+Math.cos(a+0.6)*len, py+Math.sin(a+0.6)*len, px+Math.cos(a)*len*1.4, py+Math.sin(a)*len*1.4);
+        x.quadraticCurveTo(px+Math.cos(a-0.6)*len, py+Math.sin(a-0.6)*len, px, py);
+        x.stroke();
+        if(k===rings){ x.fillStyle="rgba(232,200,120,0.7)"; x.beginPath(); x.arc(px+Math.cos(a)*len*1.75, py+Math.sin(a)*len*1.75, 1.6, 0, Math.PI*2); x.fill(); }
+      }
+    }
+    x.fillStyle = "rgba(232,200,120,0.85)"; x.beginPath(); x.arc(cx,cy,3,0,Math.PI*2); x.fill();
+    var v = x.createRadialGradient(cx,cy,base*0.2,cx,cy,Math.max(w,h)*0.8);
+    v.addColorStop(0,"rgba(255,255,255,0.06)"); v.addColorStop(1,"rgba(0,0,0,0.35)");
+    x.fillStyle = v; x.fillRect(0,0,w,h);
+  }
+  function drawAll(){ document.querySelectorAll("canvas[data-motif]").forEach(draw); }
+  drawAll();
+  var t; window.addEventListener("resize", function(){ clearTimeout(t); t = setTimeout(drawAll, 150); });
+})();
+</script>
+</body>
+</html>
