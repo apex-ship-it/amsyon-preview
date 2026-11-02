@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10251f">
+  <title>Slim Life Studio Desk | Portal concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="portal-body">
+  <div class="portal-shell">
+    <aside class="portal-sidebar" id="sidebar">
+      <a class="portal-brand" href="index.html"><span class="brand-mark">SL<span>+</span></span><span class="brand-name">SLIM LIFE <small>STUDIO DESK</small></span></a>
+      <div class="branch-picker"><span class="branch-dot"></span><span><small>ACTIVE LOCATION</small><b>Current Office Centre</b></span><span class="branch-chevron">⌄</span></div>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="portal-nav" aria-label="Portal modules">
+        <button class="portal-nav-item active" data-view="dashboard"><span class="nav-icon">⌂</span>Overview</button>
+        <button class="portal-nav-item" data-view="members"><span class="nav-icon">◉</span>Members<span class="nav-count">1.2k</span></button>
+        <button class="portal-nav-item" data-view="attendance"><span class="nav-icon">✓</span>Attendance</button>
+        <button class="portal-nav-item" data-view="plans"><span class="nav-icon">▤</span>Plans & renewals</button>
+        <button class="portal-nav-item" data-view="collections"><span class="nav-icon">₹</span>Collections</button>
+        <button class="portal-nav-item" data-view="expenses"><span class="nav-icon">↘</span>Expenses</button>
+        <div class="nav-label nav-label-spaced">PEOPLE & OPERATIONS</div>
+        <button class="portal-nav-item" data-view="employees"><span class="nav-icon">♙</span>Employees</button>
+        <button class="portal-nav-item" data-view="payroll"><span class="nav-icon">▧</span>Payroll</button>
+        <button class="portal-nav-item" data-view="equipment"><span class="nav-icon">⚙</span>Equipment log</button>
+        <button class="portal-nav-item" data-view="reports"><span class="nav-icon">▥</span>Reports</button>
+        <button class="portal-nav-item" data-view="settings"><span class="nav-icon">⚒</span>Settings & access</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-box"><span>?</span><div><b>Need a hand?</b><small>Open the help guide</small></div><span class="help-arrow">↗</span></div>
+        <div class="user-card"><div class="avatar avatar-owner">AP</div><div><b>Owner account</b><small>Gym administrator</small></div><button aria-label="Profile menu">···</button></div>
+      </div>
+    </aside>
+
+    <main class="portal-main">
+      <header class="portal-topbar">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation">☰</button>
+        <div class="crumb">Slim Life <span>/</span> <b id="breadcrumb">Overview</b></div>
+        <div class="topbar-actions">
+          <label class="search-box"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search this view" aria-label="Search this view"><kbd>⌘ K</kbd></label>
+          <button class="icon-button" aria-label="Notifications">♧<i></i></button>
+          <div class="topbar-avatar">AP</div>
+        </div>
+      </header>
+
+      <div class="portal-content">
+        <div class="demo-banner"><span class="demo-pill">DEMO</span><span>Fictional sample records. This portal is a design prototype; it is not connected to Slim Life's real members or finances.</span><a href="index.html">View website concept ↗</a></div>
+        <div class="page-heading"><div><div class="date-line">MONDAY · NELLORE <span id="todayDate"></span></div><h1 id="pageTitle">Good morning, owner <span>✳</span></h1><p id="pageSubtitle">Here’s a clear view of your gym today.</p></div><div class="heading-actions"><button class="button button-outline" data-action="export">Export view <span>↓</span></button><button class="button button-lime" data-action="add-member">＋ Add member</button></div></div>
+
+        <section class="dashboard-view" id="dashboardView">
+          <div class="metric-grid">
+            <article class="metric-card"><div class="metric-label">ACTIVE MEMBERS <span class="metric-icon green">◉</span></div><div class="metric-value">1,248</div><div class="metric-foot"><span class="trend-up">↑ 6.2%</span> <span>vs last month</span></div><div class="spark spark-green"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+            <article class="metric-card"><div class="metric-label">COLLECTED THIS MONTH <span class="metric-icon yellow">₹</span></div><div class="metric-value">₹2,46,800</div><div class="metric-foot"><span class="trend-up">↑ 8.4%</span> <span>vs last month</span></div><div class="spark spark-yellow"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+            <article class="metric-card"><div class="metric-label">PENDING COLLECTIONS <span class="metric-icon red">↗</span></div><div class="metric-value">₹38,400</div><div class="metric-foot"><span class="trend-neutral">42 members</span> <span>with dues</span></div><div class="metric-progress"><span></span></div></article>
+            <article class="metric-card"><div class="metric-label">CHECK-INS TODAY <span class="metric-icon blue">✓</span></div><div class="metric-value">86</div><div class="metric-foot"><span class="trend-up">↑ 12%</span> <span>vs last Monday</span></div><div class="metric-progress progress-blue"><span></span></div></article>
+          </div>
+
+          <div class="main-grid">
+            <section class="panel collection-panel">
+              <div class="panel-header"><div><div class="panel-kicker">MONEY IN</div><h2>Collections</h2></div><select aria-label="Collection chart period"><option>This month</option><option>Last month</option><option>This week</option></select></div>
+              <div class="chart-summary"><b>₹2,46,800</b><span class="trend-up">↑ 8.4%</span><small>Compared to previous month</small></div>
+              <div class="chart-wrap">
+                <div class="chart-y"><span>₹60k</span><span>₹40k</span><span>₹20k</span><span>₹0</span></div>
+                <svg class="collection-chart" viewBox="0 0 680 190" preserveAspectRatio="none" role="img" aria-label="Demo daily collection chart">
+                  <defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#a5da42" stop-opacity=".28"/><stop offset="100%" stop-color="#a5da42" stop-opacity="0"/></linearGradient></defs>
+                  <path class="chart-grid" d="M0 15H680M0 65H680M0 115H680M0 165H680"/>
+                  <path class="chart-area" d="M0 145 C35 132 38 97 75 108 S120 145 155 116 S205 71 235 91 S282 130 320 83 S366 52 397 67 S440 100 475 68 S518 50 550 75 S600 34 635 47 S660 26 680 30 V190 H0Z"/>
+                  <path class="chart-line" d="M0 145 C35 132 38 97 75 108 S120 145 155 116 S205 71 235 91 S282 130 320 83 S366 52 397 67 S440 100 475 68 S518 50 550 75 S600 34 635 47 S660 26 680 30"/>
+                  <circle cx="475" cy="68" r="5" class="chart-point"/>
+                </svg>
+                <div class="chart-x"><span>01</span><span>05</span><span>10</span><span>15</span><span>20</span><span>25</span><span>30</span></div>
+              </div>
+              <div class="chart-legend"><span><i></i> Member collections</span><span>Illustrative values</span></div>
+            </section>
+            <section class="panel renewals-panel">
+              <div class="panel-header"><div><div class="panel-kicker">ACTION NEEDED</div><h2>Renewals coming up</h2></div><button class="more-button" aria-label="More renewal actions">···</button></div>
+              <div class="renewal-list">
+                <div class="renewal-row"><div class="avatar avatar-pink">SR</div><div class="renewal-person"><b>S. Ramya</b><small>Strength · 1 month</small></div><div class="renewal-date"><b>Today</b><small>₹2,000</small></div></div>
+                <div class="renewal-row"><div class="avatar avatar-purple">AK</div><div class="renewal-person"><b>A. Karthik</b><small>Fitness · 3 months</small></div><div class="renewal-date"><b>Tomorrow</b><small>₹4,500</small></div></div>
+                <div class="renewal-row"><div class="avatar avatar-blue">NP</div><div class="renewal-person"><b>N. Praveen</b><small>Strength · 1 month</small></div><div class="renewal-date"><b>02 Nov</b><small>₹2,000</small></div></div>
+                <div class="renewal-row"><div class="avatar avatar-amber">FM</div><div class="renewal-person"><b>F. Mahesh</b><small>Cardio · 6 months</small></div><div class="renewal-date"><b>04 Nov</b><small>₹7,500</small></div></div>
+              </div>
+              <button class="panel-link" data-goto="plans">See all renewals <span>→</span></button>
+            </section>
+          </div>
+
+          <div class="lower-grid">
+            <section class="panel activity-panel">
+              <div class="panel-header"><div><div class="panel-kicker">LIVE LOG</div><h2>Recent activity</h2></div><button class="panel-link" data-goto="attendance">Full attendance log →</button></div>
+              <div class="activity-table-wrap"><table><thead><tr><th>MEMBER</th><th>ACTIVITY</th><th>LOCATION</th><th>TIME</th></tr></thead><tbody>
+                <tr><td><span class="table-member"><span class="mini-avatar av-green">RP</span><b>R. Prakash</b></span></td><td><span class="status-dot status-green"></span>Check-in</td><td>Current Office</td><td>08:42 AM</td></tr>
+                <tr><td><span class="table-member"><span class="mini-avatar av-blue">SK</span><b>S. Kavya</b></span></td><td><span class="status-dot status-green"></span>Check-in</td><td>Magunta Layout</td><td>08:37 AM</td></tr>
+                <tr><td><span class="table-member"><span class="mini-avatar av-orange">MV</span><b>M. Vamsi</b></span></td><td><span class="status-dot status-yellow"></span>Renewal paid</td><td>Current Office</td><td>08:21 AM</td></tr>
+              </tbody></table></div>
+            </section>
+            <section class="panel quick-actions-panel">
+              <div class="panel-header"><div><div class="panel-kicker">SHORTCUTS</div><h2>Quick actions</h2></div></div>
+              <div class="quick-action-grid">
+                <button data-action="add-member"><span class="quick-icon quick-lime">＋</span><b>Add a member</b><small>New profile & plan</small></button>
+                <button data-action="record-collection"><span class="quick-icon quick-yellow">₹</span><b>Record collection</b><small>Cash, UPI or card</small></button>
+                <button data-action="add-expense"><span class="quick-icon quick-red">↘</span><b>Log an expense</b><small>Rent, utilities, supplies</small></button>
+                <button data-goto="employees"><span class="quick-icon quick-blue">♙</span><b>Manage staff</b><small>Roles & attendance</small></button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="module-view" id="moduleView" hidden></section>
+      </div>
+      <footer class="portal-footer">SLIM LIFE STUDIO DESK <span>·</span> Concept by AMSYON Technologies <span>·</span> Fictional sample data only</footer>
+    </main>
+  </div>
+
+  <dialog class="action-dialog" id="actionDialog">
+    <form method="dialog" class="dialog-dismiss"><button class="dialog-close" aria-label="Close">×</button></form>
+    <div class="dialog-kicker">SLIM LIFE STUDIO DESK</div>
+    <h2 id="dialogTitle">Add a member</h2>
+    <p id="dialogCopy">This prototype keeps demo entries in this browser only.</p>
+    <form id="actionForm">
+      <div id="formFields" class="form-fields"></div>
+      <div class="dialog-actions"><button class="button button-outline" type="button" id="cancelDialog">Cancel</button><button class="button button-lime" type="submit" id="submitDialog">Add to demo</button></div>
+    </form>
+  </dialog>
+  <script src="portal.js"></script>
+</body>
+</html>
